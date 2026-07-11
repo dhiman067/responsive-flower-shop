@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <script src="https://kit.fontawesome.com/e74efe1ea7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- banner section start -->
+    <header class="xl:w-[1200px] m-auto">
+        <div>
+
+            <nav class="flex justify-around items-center">
+                <div>
+                    <img src="./assets/logo.png" alt="">
+                </div>
+
+                <div class="xl:flex md:flex lg:flex sm:flex flex items-center gap-4">
+
+                    <el-dropdown class="inline-block">
+                        <button
+                            class="xl:hidden md:hidden lg:hidden sm:hidden inline-flex w-full justify-center gap-x-1.5 rounded-md bg-white/10 px-3 py-2 text-sm font-semibold text-black inset-ring-1 inset-ring-white/5 hover:bg-white/20">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true" class="size-6 [[aria-expanded='true']_&]:hidden">
+                                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                data-slot="icon" aria-hidden="true"
+                                class="size-6 [&:not([aria-expanded='true']_*)]:hidden">
+                                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </button>
+
+                        <el-menu anchor="bottom end" popover
+                            class="w-56 origin-top-right rounded-md bg-gray-800 outline-1 -outline-offset-1 outline-white/10 transition transition-discrete [--anchor-gap:--spacing(2)] data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in">
+                            <div class="py-1">
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Home</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">Shop</a>
+                                <a href="#"
+                                    class="block px-4 py-2 text-sm text-gray-300 focus:bg-white/5 focus:text-white focus:outline-hidden">About
+                                    Us</a>
+                            </div>
+                        </el-menu>
+                    </el-dropdown>
+                    <a class="xl:hidden lg:hidden md:hidden sm:hidden" href=""><i class="fa-solid fa-cart-shopping"></i>
+                        Cart</a>
+
+                    <a class="hidden xl:block md:block lg:block sm:block" href="">Home</a>
+                    <a class="hidden xl:block md:block lg:block sm:block text-[#8987A1]" href="">Shop</a>
+                    <a class="hidden xl:block md:block lg:block sm:block text-[#8987A1]" href="">About Us</a>
+                    <a class="hidden xl:block md:block lg:block sm:block" href=""><i
+                            class="fa-solid fa-cart-shopping"></i> Cart</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="xl:flex xl:flex-row flex flex-col-reverse xl:justify-around xl:items-center gap-9 p-4">
+            <div class="flex flex-col gap-7 xl:w-1/2 w-full">
+                <h1 class="text-6xl font-semibold">ALWAYS <span class="text-[#E95A08]">FRESH FLOWERS</span></h1>
+                <P class="text-[#8987A1] text-2xl">Indulge your senses with the beauty and fragrance of our fresh flower
+                    shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect
+                    for any occasion. </P>
+            </div>
+
+            <div>
+                <img src="./assets/hero-flower.png" alt="">
+            </div>
+        </div>
+
+    </header>
+    <!-- banner section finish -->
+
+    <!-- our plants section start-->
+    <section class="xl:w-[1200px] m-auto p-5">
+        <div class="text-center p-9">
+            <h1 class="text-6xl font-semibold"><span class="text-orange-600">Our</span> Plants</h1>
+        </div>
+        <div class="grid grid-cols-2 xl:grid xl:grid-cols-4 lg:grid lg:grid-cols-3 gap-5">
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="border-2 border-red-500">
+                <img class="w-full" src="./assets/sample-flower-image.png" alt="">
+                <div class="flex flex-col items-center gap-2 py-2">
+                    <h1 class="font-medium">Lily Blossom</h1>
+                    <p class="font-bold">20 USD</p>
+                    <button class="bg-orange-600 hover:bg-orange-400 text-white px-4 py-2">ADD TO CART</button>
+                </div>
+            </div>
+           
+        </div>
+    </section>
+    <!-- our plants section finish -->
+</body>
+
+</html>
